@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#F08C35</color>
+    <color name="light_orange">#FFECB3</color>
+    <color name="stroke_orange">#FFC107</color>
+    <color name="red">#E53935</color>
+    <color name="light_red">#FFCDD2</color>
+    <color name="stroke_red">#E57373</color>
+</resources>

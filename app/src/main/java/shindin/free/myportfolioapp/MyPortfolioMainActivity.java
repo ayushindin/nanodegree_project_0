@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MyPortfolioMainActivity extends ActionBarActivity {
@@ -12,6 +14,42 @@ public class MyPortfolioMainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_portfolio_main);
+        findViewById(R.id.first_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.first_app));
+            }
+        });
+        findViewById(R.id.second_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.seconds_app));
+            }
+        });
+        findViewById(R.id.third_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.third_app));
+            }
+        });
+        findViewById(R.id.fourth_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.fourth_app));
+            }
+        });
+        findViewById(R.id.fifth_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.fifth_app));
+            }
+        });
+        findViewById(R.id.first_app_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMessage(getString(R.string.first_app));
+            }
+        });
     }
 
 
@@ -35,5 +73,8 @@ public class MyPortfolioMainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void showMessage(String str) {
+        Toast.makeText(this, "This button will launch " + str, Toast.LENGTH_LONG).show();
     }
 }

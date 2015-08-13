@@ -44,10 +44,10 @@ public class MyPortfolioMainActivity extends ActionBarActivity {
                 showMessage(getString(R.string.fifth_app));
             }
         });
-        findViewById(R.id.first_app_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.fin_app_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showMessage(getString(R.string.first_app));
+                showMessage(getString(R.string.final_app));
             }
         });
     }
